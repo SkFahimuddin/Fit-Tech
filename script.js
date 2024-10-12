@@ -8,7 +8,7 @@ function handleForm(event) {
     // Validate inputs
     if (height && weight) {
         // Redirect to catagory.html if inputs are valid
-        window.location.href = 'templates/catagory.html';
+        window.location.href = 'templates/catagory/catagory.html';
     } else {
         // Alert if inputs are missing
         alert("Please fill in both height and weight fields.");

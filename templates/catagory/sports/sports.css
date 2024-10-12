@@ -11,7 +11,7 @@ body{
     height: 100%;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url(../../static/images/background.jpg);
+    background-image: url(../../../static/images/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -42,18 +42,27 @@ nav{
     justify-content: space-evenly;
 }
 .container{
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.sports,.excersise{
-    width: 30vh;
-    height: 30vh;
-    background-color: rgb(255, 0, 0);
-    color: white;
-    border-radius: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.box{
+    border: 2px solid #043854;
+    color: white;
+    padding: 20px 300px 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px; 
+    background-color: rgba(110, 0, 0, 0.13);
+    border: 2px solid rgba(205, 183, 238, 0.73);
+    box-shadow: 0 0 40px rgba(67, 64, 92, 0.6);
+    backdrop-filter: blur(3px); 
+}
+
+.box:hover {
+    transform: scale(1.04);
+    color: rgb(160, 243, 243);
+    box-shadow: 0 6px 15px rgba(82, 71, 71, 0.5);
+    background: linear-gradient(135deg, #3f2969, #2f13bb); 
 }
