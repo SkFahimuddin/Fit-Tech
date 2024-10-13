@@ -10,6 +10,6 @@ function handleForm(event) {
     // Validate inputs
     if (height && weight) {
         // Redirect to catagory.html if inputs are valid
-        window.location.href = 'templates/catagory/catagory.html';
+        window.location.href = 'template/catagory/catagory.html';
     }
 }

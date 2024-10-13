@@ -30,17 +30,42 @@ nav{
     top:0;
     left:0;
     height: 10vh;
+    border: 1px solid #fff;
+    background-color:rgba(255,255,255,0.13);
+    box-shadow: 0 0 40px rgba(67, 64, 92, 0.6);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur (30px);
-
+    align-items: center;  
 }
+
 .navbar{
     width: 30%;
     display: flex;
     justify-content: space-evenly;
 }
+
+nav li button{
+    text-decoration: none;
+    background: transparent;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0 0 5px grey;
+    border: 2px solid rgb(136, 129, 129);
+    border-radius: 5px;
+    box-shadow: 3px 3px 40px grey;
+}
+
+nav h1{
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 35px;
+    text-shadow: 5px 5px 20px rgb(84, 81, 81);
+    color: rgb(190, 190, 234);
+}
+
 .container{
     height: 90vh;
     display: flex;
@@ -48,10 +73,13 @@ nav{
     align-items: center;
 }
 .sports,.excersise{
-    width: 30vh;
+    width: 40vh;
     height: 30vh;
-    background-color: rgb(255, 0, 0);
     color: white;
+    border: 3px solid #fff;
+    background-color:rgba(255,255,255,0.13);
+    box-shadow: 0 0 40px rgba(67, 64, 92, 0.6);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     display: flex;
     justify-content: center;
