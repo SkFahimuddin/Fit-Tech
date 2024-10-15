@@ -1,146 +1,176 @@
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
 }
 
-body{
-    height: 100%;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(../../../static/images/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    font-size: 24px;
-    overflow-x: hidden;
-    scroll-behavior:smooth;
+body {
+  height: 100%;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../../../static/images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 24px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-html{
-    scroll-behavior:smooth; 
+html {
+  scroll-behavior: smooth;
 }
 
-nav{
-    position: sticky;
-    top:0;
-    left:0;
-    height: 10vh;
-    
-    background-color:rgba(255,255,255,0.13);
-    box-shadow: 1px 1px 10px rgb(175, 174, 174);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.13);
+  box-shadow: 1px 1px 10px rgb(175, 174, 174);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar{
-    width: 30%;
-    display: flex;
-    justify-content: space-evenly;
+.navbar {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-nav li button{
-    text-decoration: none;
-    background: transparent;
-    color: #fff;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    text-shadow: 0 0 5px grey;
-    border: 2px solid rgb(81, 115, 162);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgb(103, 98, 98);
-    transition: 0.3s ease;
+nav li button {
+  text-decoration: none;
+  background: transparent;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Fugaz One", cursive;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgb(162, 216, 245);
+  transition: 0.3s ease;
 }
 
-nav li button:hover{
-    transform: scale(1.1);
-    color: rgb(190, 190, 234);
-    background: rgb(77, 74, 74);
-    font-weight: 600;
+nav li button:hover {
+  transform: scale(1.1);
+  font-weight: 600;
+  border: 2px solid black;
+  box-shadow: 0 3px 15px rgb(197, 162, 245);
+  background: #fff;
+  color: black;
 }
 
-nav h1{
-    font-size: 35px;
-    width: 100%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-left: 55px;
-    text-shadow: 2px 2px 10px rgb(83, 140, 197);
-    color: rgb(190, 190, 234);
-}
-.container{
-    display: flex;
-    justify-content: space-evenly;
+nav h1 {
+  font-size: 35px;
+  width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 55px;
+  text-shadow: 2px 2px 5px #ffffffbc;
+  color: rgb(198, 226, 252);
 }
 
-.sports-name{
-    margin-top: 40px;
-    font-size: 20px;
-    color: #92caca;
-    text-shadow: 10px 10px 30px rgb(136, 143, 211);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.sports{
-    width: 50%;
-    margin-top: 10vh;
+.sports-name {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #92caca;
+  text-shadow: 2px 3px 5px rgb(112, 114, 114);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.box{
-    border: 2px solid #043854;
-    color: white;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 20px 0;
-    margin-top: 50px;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 12px; 
-    background-color: rgba(110, 0, 0, 0.13);
-    border: 2px solid rgba(205, 183, 238, 0.73);
-    box-shadow: 0 0 40px rgba(67, 64, 92, 0.6);
-    backdrop-filter: blur(3px); 
-    transition: 0.3s ease;
+.sports {
+  width: 50%;
+  margin-top: 10vh;
+  flex: wrap;
+}
+
+.box {
+  z-index: 1;
+  border: 2px solid #043854;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 40px;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgba(110, 0, 0, 0.13);
+  border: 2px solid black;
+  box-shadow: 0 0 10px #fff;
+  backdrop-filter: blur(5px);
+  transition: 0.3s ease;
 }
 
 .box:hover {
-    transform: scale(1.04);
-    color: rgb(160, 243, 243);
-    box-shadow: 0 6px 15px rgba(82, 71, 71, 0.5);
-    background: linear-gradient(135deg, #3f2969, #2f13bb); 
+  transform: scale(1.04);
+  color: rgb(184, 236, 236);
+  background: linear-gradient(135deg, #3f2969, #2f13bb);
 }
 
-.dietbox,.videosbox,.aboutbox{
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 12px; 
-    background-color: rgba(110, 0, 0, 0.13);
-    border: 4px solid rgba(205, 183, 238, 0.73);
-    box-shadow: 0 0 50px rgba(67, 64, 92, 0.6);
-    backdrop-filter: blur(10px); 
+#options {
+  height: 110vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.container img{
-    width: 45vh;
-    height: 42vh;
-    border: 3px solid black;
-    border-radius: 50%;
+.dietbox,
+.videosbox,
+.aboutbox {
+  width: 40vh;
+  height: 40vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  border: 3px solid #bcdee8;
+  background-color: rgba(255, 255, 255, 0.13);
+  box-shadow: 5px 5px 30px black;
+  backdrop-filter: blur(10px);
+  border-radius: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
 }
-.image_div{
-    width:30% ;
-    height:90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky; 
-    top: 0;
-    left: 0;
+
+.dietbox:hover,
+.videosbox:hover,
+.aboutbox:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 15px 30px #fff;
+}
+
+.container img {
+  width: 45vh;
+  height: 42vh;
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: -15px 5px 20px black;
+}
+.image_div {
+  width: 30%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
 }

@@ -1,96 +1,110 @@
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
 }
 
-body{
-    height: 100%;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(../../static/images/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    font-size: 24px;
-    overflow-x: hidden;
-    scroll-behavior:smooth;
+body {
+  height: 100%;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../../static/images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 24px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-html{
-    scroll-behavior:smooth; 
+html {
+  scroll-behavior: smooth;
 }
 
-nav{
-    position: sticky;
-    top:0;
-    left:0;
-    height: 10vh;
-    
-    background-color:rgba(255,255,255,0.13);
-    box-shadow: 1px 1px 10px rgb(175, 174, 174);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.13);
+  box-shadow: 1px 1px 10px rgb(175, 174, 174);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar{
-    width: 30%;
-    display: flex;
-    justify-content: space-evenly;
+.navbar {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-nav li button{
-    text-decoration: none;
-    background: transparent;
-    color: #fff;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    text-shadow: 0 0 5px grey;
-    border: 2px solid rgb(81, 115, 162);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgb(103, 98, 98);
-    transition: 0.3s ease;
+nav li button {
+  text-decoration: none;
+  background: transparent;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Fugaz One", cursive;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgb(162, 216, 245);
+  transition: 0.3s ease;
 }
 
-nav li button:hover{
-    transform: scale(1.1);
-    color: rgb(190, 190, 234);
-    background: rgb(77, 74, 74);
-    font-weight: 600;
+nav li button:hover {
+  transform: scale(1.1);
+  font-weight: 600;
+  border: 2px solid black;
+  box-shadow: 0 3px 15px rgb(197, 162, 245);
+  background: #fff;
+  color: black;
 }
 
-nav h1{
-    font-size: 35px;
-    width: 100%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-left: 55px;
-    text-shadow: 2px 2px 10px rgb(83, 140, 197);
-    color: rgb(190, 190, 234);
+nav h1 {
+  font-size: 35px;
+  width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 55px;
+  text-shadow: 2px 2px 5px #ffffffbc;
+  color: rgb(198, 226, 252);
 }
-.container{
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+.container {
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.sports,.excersise{
-    width: 40vh;
-    height: 30vh;
-    color: white;
-    border: 3px solid #fff;
-    background-color:rgba(255,255,255,0.13);
-    box-shadow: 0 0 40px rgba(67, 64, 92, 0.6);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sports,
+.excersise {
+  width: 40vh;
+  height: 30vh;
+  font-family: "Fugaz One", cursive;
+  font-weight: 700;
+  font-size: 35px;
+  color: white;
+  border: 3px solid #fff;
+  text-shadow: 4px 4px 5px rgb(111, 155, 166);
+  background-color: rgba(255, 255, 255, 0.13);
+  box-shadow: -10px 10px 10px rgb(59, 54, 54);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+}
+
+.sports:hover,
+.excersise:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 15px 30px #fff;
 }
