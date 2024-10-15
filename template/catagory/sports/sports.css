@@ -33,7 +33,7 @@ nav {
   width: 100%;
   height: 10vh;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.13);
+  background-color: rgba(68, 78, 84, 0.342);
   box-shadow: 1px 1px 10px rgb(175, 174, 174);
   backdrop-filter: blur(10px);
   display: flex;
@@ -49,7 +49,7 @@ nav {
 
 nav li button {
   text-decoration: none;
-  background: transparent;
+  background: linear-gradient(to bottom, #04566c, #47051d);
   color: #fff;
   padding: 10px;
   font-size: 18px;
@@ -58,24 +58,27 @@ nav li button {
   border-radius: 8px;
   box-shadow: 0 2px 15px rgb(162, 216, 245);
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 nav li button:hover {
-  transform: scale(1.1);
+  transform: translateY(-5px) scale(1.05);
   font-weight: 600;
   border: 2px solid black;
   box-shadow: 0 3px 15px rgb(197, 162, 245);
-  background: #fff;
+  background: linear-gradient(to bottom, #94dfea, #d997df);
   color: black;
 }
 
 nav h1 {
-  font-size: 35px;
-  width: 100%;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 45px;
+  font-family: 'Fugaz One', cursive, Georgia, "Times New Roman", Times, serif;
   margin-left: 55px;
-  text-shadow: 2px 2px 5px #ffffffbc;
-  color: rgb(198, 226, 252);
+  background: linear-gradient(to right, #8ab6ff, #ff87a3, #f9d3a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  padding: 10px 0;
 }
 
 .container {
@@ -88,8 +91,8 @@ nav h1 {
   font-size: 20px;
   color: #92caca;
   text-shadow: 2px 3px 5px rgb(112, 114, 114);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+
 }
 
 .sports {
@@ -105,6 +108,7 @@ nav h1 {
   width: 100%;
   padding: 20px 0;
   margin-top: 40px;
+  margin-bottom: 30px;
   cursor: pointer;
   font-weight: 700;
   text-align: center;
@@ -114,6 +118,7 @@ nav h1 {
   box-shadow: 0 0 10px #fff;
   backdrop-filter: blur(5px);
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .box:hover {
@@ -123,15 +128,13 @@ nav h1 {
 }
 
 #options {
-  height: 110vh;
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.dietbox,
-.videosbox,
-.aboutbox {
+.dietbox,.videosbox,.aboutbox {
   width: 40vh;
   height: 40vh;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -150,27 +153,42 @@ nav h1 {
   transition: 0.4s ease;
 }
 
-.dietbox:hover,
-.videosbox:hover,
-.aboutbox:hover {
+.dietbox:hover,.videosbox:hover,.aboutbox:hover {
   transform: scale(1.1);
   box-shadow: 10px 15px 30px #fff;
 }
 
 .container img {
-  width: 45vh;
-  height: 42vh;
+  width: 35vh;
+  height: 32vh;
   border: 3px solid black;
   border-radius: 50%;
-  box-shadow: -15px 5px 20px black;
+  box-shadow: 1px 1px 10px black;
 }
+
 .image_div {
   width: 30%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex:wrap;
+  flex-direction: column;
   position: sticky;
   top: 0;
   left: 0;
 }
+
+.image_div p{
+  font-size: 18px;
+  margin-top: 30px;
+  font-family: Courier New;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px black;
+  border: 4px dashed black;
+  padding: 10px;
+  background-color: #1d427588;
+  backdrop-filter: blur(10px);
+  box-shadow: -1px 1px 30px white;
+}
+
