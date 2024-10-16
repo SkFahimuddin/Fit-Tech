@@ -58,7 +58,6 @@ nav li button {
   border-radius: 8px;
   box-shadow: 0 2px 15px rgb(162, 216, 245);
   transition: 0.3s ease;
-  cursor: pointer;
 }
 
 nav li button:hover {
@@ -72,7 +71,7 @@ nav li button:hover {
 
 nav h1 {
   font-size: 45px;
-  font-family: 'Fugaz One', cursive, Georgia, "Times New Roman", Times, serif;
+  font-family: "Fugaz One", cursive, Georgia, "Times New Roman", Times, serif;
   margin-left: 55px;
   background: linear-gradient(to right, #8ab6ff, #ff87a3, #f9d3a6);
   -webkit-background-clip: text;
@@ -92,7 +91,6 @@ nav h1 {
   color: #92caca;
   text-shadow: 2px 3px 5px rgb(112, 114, 114);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
-
 }
 
 .sports {
@@ -134,7 +132,9 @@ nav h1 {
   align-items: center;
 }
 
-.dietbox,.videosbox,.aboutbox {
+.dietbox,
+.videosbox,
+.aboutbox {
   width: 40vh;
   height: 40vh;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -153,7 +153,9 @@ nav h1 {
   transition: 0.4s ease;
 }
 
-.dietbox:hover,.videosbox:hover,.aboutbox:hover {
+.dietbox:hover,
+.videosbox:hover,
+.aboutbox:hover {
   transform: scale(1.1);
   box-shadow: 10px 15px 30px #fff;
 }
@@ -172,15 +174,16 @@ nav h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex:wrap;
+  flex: wrap;
   flex-direction: column;
   position: sticky;
   top: 0;
   left: 0;
 }
 
-.image_div p{
-  font-size: 18px;
+.image_div .p-big {
+  display: block;
+  font-size: 15px;
   margin-top: 30px;
   font-family: Courier New;
   font-weight: 600;
@@ -192,3 +195,203 @@ nav h1 {
   box-shadow: -1px 1px 30px white;
 }
 
+.image_div .p-small {
+  display: none;
+}
+
+/* for bigger than tab ig? */
+
+@media (max-width: 1200px) {
+  nav h1 {
+    font-size: 35px;
+    margin-left: 30px;
+  }
+
+  .navbar {
+    width: 50%;
+  }
+
+  .sports {
+    width: 45%;
+  }
+
+  .sports-name {
+    font-size: 18px;
+  }
+
+  .container img {
+    width: 30vh;
+    height: 28vh;
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px black;
+  }
+
+  .image_div {
+    width: 35%;
+  }
+
+  .image_div .p-big {
+    display: block;
+    font-size: 15px;
+  }
+
+  .dietbox,
+  .videosbox,
+  .aboutbox {
+    width: 85vh;
+    height: 35vh;
+  }
+
+  #options {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .dietbox,
+  .videosbox,
+  .aboutbox {
+    width: 75vh;
+    height: 15vh;
+    border-radius: 20%;
+  }
+}
+
+/* for tab */
+@media (max-width: 800px) {
+  nav h1 {
+    font-size: 35px;
+    margin-left: 30px;
+  }
+
+  .navbar {
+    width: 50%;
+  }
+
+  .sports {
+    width: 35%;
+  }
+
+  .sports-name {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .container img {
+    width: 30vh;
+    height: 28vh;
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px black;
+  }
+
+  .image_div {
+    width: 40%;
+  }
+
+  .image_div .p-big {
+    display: block;
+    font-size: 14px;
+  }
+
+  .dietbox,
+  .videosbox,
+  .aboutbox {
+    width: 85vh;
+    height: 35vh;
+  }
+
+  #options {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .dietbox,
+  .videosbox,
+  .aboutbox {
+    width: 75vh;
+    height: 15vh;
+    border-radius: 20%;
+  }
+}
+
+/* for phone */
+
+@media (max-width: 600px) {
+  nav h1 {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+
+  .navbar {
+    width: 60%;
+  }
+
+  .sports {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .sports-name {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .box {
+    width: 90%;
+    padding: 20px 0;
+    margin: 25px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .image_div {
+    width: 100%;
+  }
+
+  .container img {
+    width: 30vh;
+    height: 30vh;
+  }
+
+  .image_div .p-big {
+    display: none;
+  }
+
+  .image_div .p-small {
+    display: block;
+    width: 90%;
+    font-size: 18px;
+    margin-top: 30px;
+    font-family: Courier New;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px black;
+    border: 4px dashed black;
+    padding: 10px;
+    background-color: #c755be74;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 30px white;
+  }
+
+  #options {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .dietbox,
+  .videosbox,
+  .aboutbox {
+    width: 50vh;
+    height: 15vh;
+    border-radius: 20%;
+  }
+}

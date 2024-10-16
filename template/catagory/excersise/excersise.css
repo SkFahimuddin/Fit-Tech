@@ -178,16 +178,212 @@ nav h1 {
   left: 0;
 }
 
-.image_div p{
-  font-size: 18px;
+.image_div .p-big{
+  display: block;
+  font-size: 15px;
   margin-top: 30px;
   font-family: Courier New;
   font-weight: 600;
   text-shadow: 2px 2px 4px black;
   border: 4px dashed black;
   padding: 10px;
-  background-color: #c755be74;
+  background-color: #1d427588;
   backdrop-filter: blur(10px);
-  box-shadow: 1px 1px 30px white;
+  box-shadow: -1px 1px 30px white;
 }
 
+.image_div .p-small{
+  display: none;
+}
+
+/* for bigger than tab ig? */
+
+@media (max-width: 1200px) {
+  nav h1 {
+    font-size: 35px;
+    margin-left: 30px;
+  }
+
+  .navbar {
+    width: 50%;
+  }
+
+  .excersise{
+    width: 45%;
+  }
+  
+  .exercise-name {
+    font-size: 18px;
+  }
+
+  .container img {
+    width: 30vh;
+    height: 28vh;
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px black;
+  }
+
+  .image_div {
+    width: 35%;
+  }
+  
+  .image_div .p-big{
+    display: block;
+    font-size: 15px;
+  }
+
+  .dietbox, .videosbox, .aboutbox{
+    width: 85vh;
+    height: 35vh;
+  }
+
+  #options {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .dietbox,.videosbox,.aboutbox{
+    width: 75vh;
+    height: 15vh;
+    border-radius: 20%;
+  }
+
+}
+
+
+/* for tab */
+@media (max-width: 800px) {
+  nav h1 {
+    font-size: 35px;
+    margin-left: 30px;
+  }
+
+  .navbar {
+    width: 50%;
+  }
+
+  .excersise{
+    width: 35%;
+  }
+  
+  .exercise-name {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .container img {
+    width: 30vh;
+    height: 28vh;
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px black;
+  }
+
+  .image_div {
+    width: 40%;
+  }
+  
+  .image_div .p-big{
+    display: block;
+    font-size: 14px;
+  }
+
+  .dietbox, .videosbox, .aboutbox{
+    width: 85vh;
+    height: 35vh;
+  }
+
+  #options {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .dietbox,.videosbox,.aboutbox{
+    width: 75vh;
+    height: 15vh;
+    border-radius: 20%;
+  }
+  
+}
+
+/* for phone */
+
+@media (max-width: 600px) {
+  nav h1 {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+
+  .navbar {
+    width: 60%;
+  }
+
+  .excersise{
+    width: 100%;
+  }
+
+  .container{
+    flex-direction: column;
+  }
+
+  .exercise-name {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .box {
+    width: 90%;
+    padding: 20px 0;
+    margin: 25px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .image_div {
+    width: 100%;
+  }
+
+  
+
+  .container img {
+    width: 30vh;
+    height: 30vh;
+  }
+
+  .image_div .p-big{
+    display: none;
+  }
+
+  .image_div .p-small{
+    display: block;
+    width: 90%;
+    font-size: 18px;
+    margin-top: 30px;
+    font-family: Courier New;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px black;
+    border: 4px dashed black;
+    padding: 10px;
+    background-color: #c755be74;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 30px white;
+  }
+
+  #options {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .dietbox,.videosbox,.aboutbox{
+    width: 50vh;
+    height: 15vh;
+    border-radius: 20%;
+  }
+}

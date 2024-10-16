@@ -97,15 +97,17 @@ h2 {
   border: 1px solid grey;
   border-radius: 30px;
   padding: 10px 20px;
-  background: rgb(246, 176, 221);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(246, 176, 221);
+}
+
+.section-part{
+  width: 90%
 }
 
 .section {
-  width: 100%; 
+  width:100%; 
   background-color: rgba(18, 68, 109, 0.644);
-  border: 2px solid white;
+  border: 2px solid rgb(184, 216, 240);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 30px;
@@ -115,7 +117,9 @@ h2 {
 
 .section h3 {
   font-size: 28px;
+  font-weight: 800;
   margin-bottom: 10px;
+  border-bottom: 2px solid white;
   color: #6fdff1; 
   text-shadow: 2px 2px 5px black;
 }
@@ -123,12 +127,12 @@ h2 {
 .section p {
   font-size: 22px;
   line-height: 1.6;
+  font-weight: 600;
   color: #e0e0e0; 
 }
 
-/* Media query for phones and small screens */
-@media only screen and (max-width: 767px) {
 
+@media only screen and (max-width: 600px) {
   nav h1 {
     font-size: 32px;
     margin-left: 20px;
@@ -147,6 +151,7 @@ h2 {
   .container {
     padding: 80px 10px;
     align-items: center;
+    margin-top: 20px;
   }
 
   h2 {
