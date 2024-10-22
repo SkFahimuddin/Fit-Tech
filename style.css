@@ -150,6 +150,34 @@ form label {
   font-size: 20px;
 }
 
+
+
+
+
+
+@media (max-width: 1200px) {
+  nav h1 {
+    font-size: 35px;
+    margin-left: 30px;
+  }
+
+  .navbar {
+    width: 50%;
+  }
+}  
+
+@media (max-width: 800px) {
+  nav h1 {
+    font-size: 35px;
+    margin-left: 30px;
+  }
+
+  .navbar {
+    width: 50%;
+  }
+}
+
+
 @media only screen and (max-width: 600px){
   
   nav h1 {
