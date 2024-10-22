@@ -131,3 +131,49 @@ nav h1 {
     color: #e0e0e0; 
   }
   
+
+  @media only screen and (max-width: 600px) {
+    nav h1 {
+      font-size: 32px;
+      margin-left: 20px;
+    }
+  
+    .navbar {
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    nav li button {
+      font-size: 15px;
+      padding: 9px;
+    }
+  
+    .container {
+      padding: 80px 10px;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    h2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+      padding: 8px 15px;
+    }
+  
+    .section {
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 3px 3px 8px black;
+    }
+  
+    .section h3 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+  
+    .section p {
+      font-size: 18px;
+    }
+  }
+  
