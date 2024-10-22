@@ -97,17 +97,17 @@ nav h1 {
     border: 1px solid grey;
     border-radius: 30px;
     padding: 10px 20px;
-    color: rgb(246, 176, 221);
+    color: rgb(176, 238, 246);
   }
   
   .section-part{
-    width: 90%
+    width: 85%
   }
   
   .section {
-    width:100%; 
-    background-color: rgba(18, 68, 109, 0.644);
-    border: 2px solid rgb(184, 216, 240);
+    width: 100%; 
+    background-color: rgba(41, 39, 39, 0.59);
+    border: 3px solid rgb(115, 199, 104);
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 30px;
@@ -119,13 +119,14 @@ nav h1 {
     font-size: 28px;
     font-weight: 800;
     margin-bottom: 10px;
-    border-bottom: 2px solid white;
-    color: #6fdff1; 
+    border-bottom: 2px solid rgb(54, 189, 160);
+    color: rgb(176, 246, 203); 
     text-shadow: 2px 2px 5px black;
   }
   
   .section p {
-    font-size: 22px;
+    font-size: 24px;
+    letter-spacing: 2px;
     line-height: 1.6;
     font-weight: 600;
     color: #e0e0e0; 
